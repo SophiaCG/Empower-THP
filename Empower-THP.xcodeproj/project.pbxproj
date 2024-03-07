@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEE166EF2B9A4DAA00B9A4EE /* Empower_THPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE166EE2B9A4DAA00B9A4EE /* Empower_THPApp.swift */; };
+		EEE166F12B9A4DAA00B9A4EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE166F02B9A4DAA00B9A4EE /* ContentView.swift */; };
+		EEE166F32B9A4DAB00B9A4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE166F22B9A4DAB00B9A4EE /* Assets.xcassets */; };
+		EEE166F72B9A4DAB00B9A4EE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE166F62B9A4DAB00B9A4EE /* Preview Assets.xcassets */; };
+		EEE167012B9A4DAC00B9A4EE /* Empower_THPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE167002B9A4DAC00B9A4EE /* Empower_THPTests.swift */; };
+		EEE1670B2B9A4DAC00B9A4EE /* Empower_THPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE1670A2B9A4DAC00B9A4EE /* Empower_THPUITests.swift */; };
+		EEE1670D2B9A4DAC00B9A4EE /* Empower_THPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE1670C2B9A4DAC00B9A4EE /* Empower_THPUITestsLaunchTests.swift */; };
+		EEE1671B2B9A4F7000B9A4EE /* Beneficiaries.json in Resources */ = {isa = PBXBuildFile; fileRef = EEE1671A2B9A4F7000B9A4EE /* Beneficiaries.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EEE166FD2B9A4DAC00B9A4EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEE166E32B9A4DA900B9A4EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEE166EA2B9A4DA900B9A4EE;
+			remoteInfo = "Empower-THP";
+		};
+		EEE167072B9A4DAC00B9A4EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EEE166E32B9A4DA900B9A4EE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EEE166EA2B9A4DA900B9A4EE;
+			remoteInfo = "Empower-THP";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EEE166EB2B9A4DAA00B9A4EE /* Empower-THP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Empower-THP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE166EE2B9A4DAA00B9A4EE /* Empower_THPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empower_THPApp.swift; sourceTree = "<group>"; };
+		EEE166F02B9A4DAA00B9A4EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EEE166F22B9A4DAB00B9A4EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEE166F42B9A4DAB00B9A4EE /* Empower_THP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Empower_THP.entitlements; sourceTree = "<group>"; };
+		EEE166F62B9A4DAB00B9A4EE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EEE166FC2B9A4DAC00B9A4EE /* Empower-THPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Empower-THPTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE167002B9A4DAC00B9A4EE /* Empower_THPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empower_THPTests.swift; sourceTree = "<group>"; };
+		EEE167062B9A4DAC00B9A4EE /* Empower-THPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Empower-THPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEE1670A2B9A4DAC00B9A4EE /* Empower_THPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empower_THPUITests.swift; sourceTree = "<group>"; };
+		EEE1670C2B9A4DAC00B9A4EE /* Empower_THPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empower_THPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EEE1671A2B9A4F7000B9A4EE /* Beneficiaries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Beneficiaries.json; path = ../../../../../../Downloads/Beneficiaries.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEE166E82B9A4DA900B9A4EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE166F92B9A4DAC00B9A4EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE167032B9A4DAC00B9A4EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEE166E22B9A4DA900B9A4EE = {
+			isa = PBXGroup;
+			children = (
+				EEE166ED2B9A4DAA00B9A4EE /* Empower-THP */,
+				EEE166FF2B9A4DAC00B9A4EE /* Empower-THPTests */,
+				EEE167092B9A4DAC00B9A4EE /* Empower-THPUITests */,
+				EEE166EC2B9A4DAA00B9A4EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEE166EC2B9A4DAA00B9A4EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEE166EB2B9A4DAA00B9A4EE /* Empower-THP.app */,
+				EEE166FC2B9A4DAC00B9A4EE /* Empower-THPTests.xctest */,
+				EEE167062B9A4DAC00B9A4EE /* Empower-THPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEE166ED2B9A4DAA00B9A4EE /* Empower-THP */ = {
+			isa = PBXGroup;
+			children = (
+				EEE167192B9A4F6100B9A4EE /* Model */,
+				EEE1671C2B9A4FB700B9A4EE /* ViewModel */,
+				EEE1671D2B9A4FBF00B9A4EE /* View */,
+				EEE166EE2B9A4DAA00B9A4EE /* Empower_THPApp.swift */,
+				EEE166F02B9A4DAA00B9A4EE /* ContentView.swift */,
+				EEE166F22B9A4DAB00B9A4EE /* Assets.xcassets */,
+				EEE166F42B9A4DAB00B9A4EE /* Empower_THP.entitlements */,
+				EEE166F52B9A4DAB00B9A4EE /* Preview Content */,
+			);
+			path = "Empower-THP";
+			sourceTree = "<group>";
+		};
+		EEE166F52B9A4DAB00B9A4EE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EEE166F62B9A4DAB00B9A4EE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EEE166FF2B9A4DAC00B9A4EE /* Empower-THPTests */ = {
+			isa = PBXGroup;
+			children = (
+				EEE167002B9A4DAC00B9A4EE /* Empower_THPTests.swift */,
+			);
+			path = "Empower-THPTests";
+			sourceTree = "<group>";
+		};
+		EEE167092B9A4DAC00B9A4EE /* Empower-THPUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EEE1670A2B9A4DAC00B9A4EE /* Empower_THPUITests.swift */,
+				EEE1670C2B9A4DAC00B9A4EE /* Empower_THPUITestsLaunchTests.swift */,
+			);
+			path = "Empower-THPUITests";
+			sourceTree = "<group>";
+		};
+		EEE167192B9A4F6100B9A4EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EEE1671A2B9A4F7000B9A4EE /* Beneficiaries.json */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EEE1671C2B9A4FB700B9A4EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EEE1671D2B9A4FBF00B9A4EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEE166EA2B9A4DA900B9A4EE /* Empower-THP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE167102B9A4DAC00B9A4EE /* Build configuration list for PBXNativeTarget "Empower-THP" */;
+			buildPhases = (
+				EEE166E72B9A4DA900B9A4EE /* Sources */,
+				EEE166E82B9A4DA900B9A4EE /* Frameworks */,
+				EEE166E92B9A4DA900B9A4EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Empower-THP";
+			productName = "Empower-THP";
+			productReference = EEE166EB2B9A4DAA00B9A4EE /* Empower-THP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EEE166FB2B9A4DAC00B9A4EE /* Empower-THPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE167132B9A4DAC00B9A4EE /* Build configuration list for PBXNativeTarget "Empower-THPTests" */;
+			buildPhases = (
+				EEE166F82B9A4DAC00B9A4EE /* Sources */,
+				EEE166F92B9A4DAC00B9A4EE /* Frameworks */,
+				EEE166FA2B9A4DAC00B9A4EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEE166FE2B9A4DAC00B9A4EE /* PBXTargetDependency */,
+			);
+			name = "Empower-THPTests";
+			productName = "Empower-THPTests";
+			productReference = EEE166FC2B9A4DAC00B9A4EE /* Empower-THPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EEE167052B9A4DAC00B9A4EE /* Empower-THPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEE167162B9A4DAC00B9A4EE /* Build configuration list for PBXNativeTarget "Empower-THPUITests" */;
+			buildPhases = (
+				EEE167022B9A4DAC00B9A4EE /* Sources */,
+				EEE167032B9A4DAC00B9A4EE /* Frameworks */,
+				EEE167042B9A4DAC00B9A4EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EEE167082B9A4DAC00B9A4EE /* PBXTargetDependency */,
+			);
+			name = "Empower-THPUITests";
+			productName = "Empower-THPUITests";
+			productReference = EEE167062B9A4DAC00B9A4EE /* Empower-THPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEE166E32B9A4DA900B9A4EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					EEE166EA2B9A4DA900B9A4EE = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					EEE166FB2B9A4DAC00B9A4EE = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = EEE166EA2B9A4DA900B9A4EE;
+					};
+					EEE167052B9A4DAC00B9A4EE = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = EEE166EA2B9A4DA900B9A4EE;
+					};
+				};
+			};
+			buildConfigurationList = EEE166E62B9A4DA900B9A4EE /* Build configuration list for PBXProject "Empower-THP" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEE166E22B9A4DA900B9A4EE;
+			productRefGroup = EEE166EC2B9A4DAA00B9A4EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEE166EA2B9A4DA900B9A4EE /* Empower-THP */,
+				EEE166FB2B9A4DAC00B9A4EE /* Empower-THPTests */,
+				EEE167052B9A4DAC00B9A4EE /* Empower-THPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEE166E92B9A4DA900B9A4EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE166F72B9A4DAB00B9A4EE /* Preview Assets.xcassets in Resources */,
+				EEE166F32B9A4DAB00B9A4EE /* Assets.xcassets in Resources */,
+				EEE1671B2B9A4F7000B9A4EE /* Beneficiaries.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE166FA2B9A4DAC00B9A4EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE167042B9A4DAC00B9A4EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEE166E72B9A4DA900B9A4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE166F12B9A4DAA00B9A4EE /* ContentView.swift in Sources */,
+				EEE166EF2B9A4DAA00B9A4EE /* Empower_THPApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE166F82B9A4DAC00B9A4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE167012B9A4DAC00B9A4EE /* Empower_THPTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEE167022B9A4DAC00B9A4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEE1670B2B9A4DAC00B9A4EE /* Empower_THPUITests.swift in Sources */,
+				EEE1670D2B9A4DAC00B9A4EE /* Empower_THPUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EEE166FE2B9A4DAC00B9A4EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEE166EA2B9A4DA900B9A4EE /* Empower-THP */;
+			targetProxy = EEE166FD2B9A4DAC00B9A4EE /* PBXContainerItemProxy */;
+		};
+		EEE167082B9A4DAC00B9A4EE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EEE166EA2B9A4DA900B9A4EE /* Empower-THP */;
+			targetProxy = EEE167072B9A4DAC00B9A4EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EEE1670E2B9A4DAC00B9A4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEE1670F2B9A4DAC00B9A4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		EEE167112B9A4DAC00B9A4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Empower-THP/Empower_THP.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Empower-THP/Preview Content\"";
+				DEVELOPMENT_TEAM = H8TYQ3J2FN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scg.Translate-SwiftUI.Empower-THP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EEE167122B9A4DAC00B9A4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Empower-THP/Empower_THP.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Empower-THP/Preview Content\"";
+				DEVELOPMENT_TEAM = H8TYQ3J2FN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scg.Translate-SwiftUI.Empower-THP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EEE167142B9A4DAC00B9A4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H8TYQ3J2FN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scg.Translate-SwiftUI.Empower-THPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Empower-THP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Empower-THP";
+			};
+			name = Debug;
+		};
+		EEE167152B9A4DAC00B9A4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H8TYQ3J2FN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scg.Translate-SwiftUI.Empower-THPTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Empower-THP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Empower-THP";
+			};
+			name = Release;
+		};
+		EEE167172B9A4DAC00B9A4EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H8TYQ3J2FN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scg.Translate-SwiftUI.Empower-THPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Empower-THP";
+			};
+			name = Debug;
+		};
+		EEE167182B9A4DAC00B9A4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H8TYQ3J2FN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.scg.Translate-SwiftUI.Empower-THPUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Empower-THP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEE166E62B9A4DA900B9A4EE /* Build configuration list for PBXProject "Empower-THP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE1670E2B9A4DAC00B9A4EE /* Debug */,
+				EEE1670F2B9A4DAC00B9A4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE167102B9A4DAC00B9A4EE /* Build configuration list for PBXNativeTarget "Empower-THP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE167112B9A4DAC00B9A4EE /* Debug */,
+				EEE167122B9A4DAC00B9A4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE167132B9A4DAC00B9A4EE /* Build configuration list for PBXNativeTarget "Empower-THPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE167142B9A4DAC00B9A4EE /* Debug */,
+				EEE167152B9A4DAC00B9A4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEE167162B9A4DAC00B9A4EE /* Build configuration list for PBXNativeTarget "Empower-THPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEE167172B9A4DAC00B9A4EE /* Debug */,
+				EEE167182B9A4DAC00B9A4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EEE166E32B9A4DA900B9A4EE /* Project object */;
+}
