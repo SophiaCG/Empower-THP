@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE9AE3322B9A7098008A2926 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9AE3312B9A7098008A2926 /* DetailView.swift */; };
 		EEE166EF2B9A4DAA00B9A4EE /* Empower_THPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE166EE2B9A4DAA00B9A4EE /* Empower_THPApp.swift */; };
 		EEE166F12B9A4DAA00B9A4EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE166F02B9A4DAA00B9A4EE /* ContentView.swift */; };
 		EEE166F32B9A4DAB00B9A4EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE166F22B9A4DAB00B9A4EE /* Assets.xcassets */; };
@@ -15,6 +16,9 @@
 		EEE1670B2B9A4DAC00B9A4EE /* Empower_THPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE1670A2B9A4DAC00B9A4EE /* Empower_THPUITests.swift */; };
 		EEE1670D2B9A4DAC00B9A4EE /* Empower_THPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE1670C2B9A4DAC00B9A4EE /* Empower_THPUITestsLaunchTests.swift */; };
 		EEE1671B2B9A4F7000B9A4EE /* Beneficiaries.json in Resources */ = {isa = PBXBuildFile; fileRef = EEE1671A2B9A4F7000B9A4EE /* Beneficiaries.json */; };
+		EEE1671F2B9A684900B9A4EE /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE1671E2B9A684900B9A4EE /* Person.swift */; };
+		EEE167212B9A69A700B9A4EE /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE167202B9A69A700B9A4EE /* DataManager.swift */; };
+		EEE167232B9A6A0D00B9A4EE /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE167222B9A6A0D00B9A4EE /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE9AE3312B9A7098008A2926 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		EEE166EB2B9A4DAA00B9A4EE /* Empower-THP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Empower-THP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE166EE2B9A4DAA00B9A4EE /* Empower_THPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empower_THPApp.swift; sourceTree = "<group>"; };
 		EEE166F02B9A4DAA00B9A4EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -47,6 +52,9 @@
 		EEE1670A2B9A4DAC00B9A4EE /* Empower_THPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empower_THPUITests.swift; sourceTree = "<group>"; };
 		EEE1670C2B9A4DAC00B9A4EE /* Empower_THPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Empower_THPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EEE1671A2B9A4F7000B9A4EE /* Beneficiaries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Beneficiaries.json; path = ../../../../../../Downloads/Beneficiaries.json; sourceTree = "<group>"; };
+		EEE1671E2B9A684900B9A4EE /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		EEE167202B9A69A700B9A4EE /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		EEE167222B9A6A0D00B9A4EE /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +109,6 @@
 				EEE1671C2B9A4FB700B9A4EE /* ViewModel */,
 				EEE1671D2B9A4FBF00B9A4EE /* View */,
 				EEE166EE2B9A4DAA00B9A4EE /* Empower_THPApp.swift */,
-				EEE166F02B9A4DAA00B9A4EE /* ContentView.swift */,
 				EEE166F22B9A4DAB00B9A4EE /* Assets.xcassets */,
 				EEE166F42B9A4DAB00B9A4EE /* Empower_THP.entitlements */,
 				EEE166F52B9A4DAB00B9A4EE /* Preview Content */,
@@ -138,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				EEE1671A2B9A4F7000B9A4EE /* Beneficiaries.json */,
+				EEE1671E2B9A684900B9A4EE /* Person.swift */,
+				EEE167202B9A69A700B9A4EE /* DataManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -145,6 +154,7 @@
 		EEE1671C2B9A4FB700B9A4EE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				EEE167222B9A6A0D00B9A4EE /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -152,6 +162,8 @@
 		EEE1671D2B9A4FBF00B9A4EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EEE166F02B9A4DAA00B9A4EE /* ContentView.swift */,
+				EE9AE3312B9A7098008A2926 /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -287,6 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEE167232B9A6A0D00B9A4EE /* ViewModel.swift in Sources */,
+				EE9AE3322B9A7098008A2926 /* DetailView.swift in Sources */,
+				EEE1671F2B9A684900B9A4EE /* Person.swift in Sources */,
+				EEE167212B9A69A700B9A4EE /* DataManager.swift in Sources */,
 				EEE166F12B9A4DAA00B9A4EE /* ContentView.swift in Sources */,
 				EEE166EF2B9A4DAA00B9A4EE /* Empower_THPApp.swift in Sources */,
 			);
