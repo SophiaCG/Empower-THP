@@ -9,25 +9,39 @@ import XCTest
 
 final class Empower_THPUITests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
-        continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
+    func testContentAndDetailViews() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
+        
+        let collectionViewsQuery = app.collectionViews
+        let firstCell = collectionViewsQuery.children(matching: .cell).element(boundBy: 0)
+        let secondCell = collectionViewsQuery.children(matching: .cell).element(boundBy: 1)
+        let exitButton = app.buttons["multiply"]
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        XCTAssertTrue(firstCell.staticTexts["John Smith"].exists)
+        XCTAssertTrue(firstCell.staticTexts["Spouse"].exists)
+        XCTAssertTrue(firstCell.staticTexts["Primary"].exists)
+
+        XCTAssertFalse(secondCell.staticTexts["Mary Smith"].exists)
+        XCTAssertTrue(secondCell.staticTexts["Jane Smith"].exists)
+        XCTAssertTrue(secondCell.staticTexts["Child"].exists)
+        XCTAssertTrue(secondCell.staticTexts["Contingent"].exists)
+
+        firstCell.tap()
+
+        XCTAssertTrue(exitButton.exists)
+        XCTAssertTrue(app.staticTexts["Social Security Number: XXXXX3333"].exists)
+        XCTAssertTrue(app.staticTexts["Date of Birth: 04/20/1979"].exists)
+        XCTAssertTrue(app.staticTexts["Phone Number: 3035555555"].exists)
+
+        exitButton.tap()
+        secondCell.tap()
+        
+        XCTAssertTrue(app.staticTexts["Social Security Number: XXXXX4664"].exists)
+        XCTAssertTrue(app.staticTexts["Date of Birth: 01/11/2012"].exists)
+        XCTAssertTrue(app.staticTexts["Phone Number: 3034455555"].exists)
+                
     }
 
     func testLaunchPerformance() throws {

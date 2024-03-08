@@ -17,22 +17,28 @@ struct ContentView: View {
         NavigationView {
             List {
                 ForEach(viewModel.people, id: \.firstName) { person in
-                    VStack(alignment: .leading) {
-                        Text("\(person.firstName ?? "") \(person.lastName ?? "")").bold()
-                        Text("\(person.beneType ?? "")")
-                        Text("\(person.designationCode == "P" ? "Primary" : "Contingent")")
-                    }
-                    .onTapGesture {
-                        // Set the selected person when the cell is tapped
+                    Button {
+                        // Set the selected person and display modal when a cell is tapped
                         selectedPerson = person
                         isPresented = true
+                    } label: {
+                        VStack(alignment: .leading) {
+                            Text("\(person.firstName ?? "") \(person.lastName ?? "")")
+                                .bold()
+                                .foregroundStyle(.black)
+                            Text("\(person.beneType ?? "")")
+                                .foregroundStyle(.black)
+                            Text("\(person.designationCode == "P" ? "Primary" : "Contingent")")
+                                .foregroundStyle(.black)
+                        }
+
                     }
                 }
             }
             .navigationTitle("Beneficiaries")
             .sheet(isPresented: $isPresented) {
                 // Modal sheet with selected person's information
-                DetailView(person: $selectedPerson)
+                DetailView(person: $selectedPerson, isPresented: $isPresented)
             }
         }
         .onAppear {
@@ -42,6 +48,6 @@ struct ContentView: View {
     }
 }
 
-//#Preview {
-//    ContentView()
-//}
+#Preview {
+    ContentView()
+}

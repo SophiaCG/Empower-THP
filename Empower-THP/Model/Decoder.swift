@@ -1,5 +1,5 @@
 //
-//  DataManager.swift
+//  Decoder.swift
 //  Empower-THP
 //
 //  Created by Sophia Gorgonio on 3/7/24.
@@ -7,13 +7,13 @@
 
 import Foundation
 
-class DataManager {
-    
+class Decoder {
+        
     // Function to fetch data from a JSON file and decode it into an array of Person objects
-    func fetchData(completion: @escaping ([Person]) -> Void) {
+    func decodeData(from file: URL, completion: @escaping ([Person]) -> Void) {
         // Check if the JSON file exists in the main bundle
-        if let fileURL = Bundle.main.url(forResource: "Beneficiaries", withExtension: "json"),
-           let jsonData = try? Data(contentsOf: fileURL) {
+        if FileManager.default.fileExists(atPath: file.path),
+           let jsonData = try? Data(contentsOf: file) {
             
             // Decode JSON data into an array of Person objects
             do {

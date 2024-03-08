@@ -9,17 +9,20 @@ import Foundation
 
 class ViewModel: ObservableObject {
     @Published var people: [Person] = []
-    private let dataManager = DataManager()
+    private let decoder = Decoder()
+    let file = Bundle.main.url(forResource: "Beneficiaries", withExtension: "json")
 
     func fetchData() {
-        dataManager.fetchData { [weak self] people in
-            // Format dates before updating the @Published property
-            var formattedPeople = self?.formatDates(people) ?? []
-            self?.people = formattedPeople
+        if let fileURL = file {
+            decoder.decodeData(from: fileURL) { [weak self] people in
+                // Format dates before updating the @Published property
+                var formattedPeople = self?.formatDates(people) ?? []
+                self?.people = formattedPeople
+            }
         }
     }
 
-    private func formatDates(_ people: [Person]) -> [Person] {
+    func formatDates(_ people: [Person]) -> [Person] {
         // Set original date format
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMddyyyy"
