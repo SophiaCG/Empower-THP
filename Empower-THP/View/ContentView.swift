@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+// Displays list of beneficiaries with their first name, last name, beneficiary type, and designation
 struct ContentView: View {
     @ObservedObject var viewModel = ViewModel()
     @State private var selectedPerson: Person?
@@ -17,7 +18,7 @@ struct ContentView: View {
             List {
                 ForEach(viewModel.people, id: \.firstName) { person in
                     VStack(alignment: .leading) {
-                        Text("\(person.firstName ?? "") \(person.lastName ?? "")")
+                        Text("\(person.firstName ?? "") \(person.lastName ?? "")").bold()
                         Text("\(person.beneType ?? "")")
                         Text("\(person.designationCode == "P" ? "Primary" : "Contingent")")
                     }
@@ -30,11 +31,12 @@ struct ContentView: View {
             }
             .navigationTitle("Beneficiaries")
             .sheet(isPresented: $isPresented) {
-                // Create and present your modal sheet here
+                // Modal sheet with selected person's information
                 DetailView(person: $selectedPerson)
             }
         }
         .onAppear {
+            // Call fetchData function to decode JSON file
             viewModel.fetchData()
         }
     }

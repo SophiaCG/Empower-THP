@@ -7,6 +7,7 @@
 
 import Foundation
 
+// Beneficiary
 struct Person: Codable {
     var lastName: String?
     var firstName: String?
@@ -19,6 +20,7 @@ struct Person: Codable {
     var beneficiaryAddress: Address?
 }
 
+// Beneficiary's Address
 struct Address: Codable {
     var firstLineMailing: String?
     var scndLineMailing: String?
